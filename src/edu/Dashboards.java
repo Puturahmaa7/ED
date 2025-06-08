@@ -15,6 +15,13 @@ public class Dashboards extends javax.swing.JFrame {
      */
     public Dashboards() {
         initComponents();
+        sVGIcon1.setSVGIcon("SVGIcon/NewProfil.svg", 50, 50);
+        sVGIcon2.setSVGIcon("SVGIcon/LogoPomo.svg", 130, 130);
+        sVGIcon3.setSVGIcon("SVGIcon/NewTugas.svg", 50, 50);
+        sVGIcon4.setSVGIcon("SVGIcon/NewBeranda.svg", 50, 50);
+        sVGIcon7.setSVGIcon("SVGIcon/NewStatistik.svg", 50, 50);
+        sVGIcon6.setSVGIcon("SVGIcon/NewTimer.svg", 50, 50);
+        sVGIcon8.setSVGIcon("SVGIcon/ShowAll.svg", 50, 50);
     }
 
     /**
@@ -26,16 +33,16 @@ public class Dashboards extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        sVGIcon5 = new edu.SVGIcon();
         MainPanel = new javax.swing.JPanel();
         Navbar = new javax.swing.JPanel();
-        Home = new javax.swing.JLabel();
-        Tugas = new javax.swing.JLabel();
-        Timer = new javax.swing.JLabel();
-        Statistik = new javax.swing.JLabel();
+        sVGIcon7 = new edu.SVGIcon();
+        sVGIcon4 = new edu.SVGIcon();
+        sVGIcon3 = new edu.SVGIcon();
+        sVGIcon6 = new edu.SVGIcon();
         PanelAtas = new javax.swing.JPanel();
-        HaloUser = new javax.swing.JLabel();
-        Logo = new javax.swing.JLabel();
-        Profil = new javax.swing.JLabel();
+        sVGIcon1 = new edu.SVGIcon();
+        sVGIcon2 = new edu.SVGIcon();
         TugasHariIni = new javax.swing.JPanel();
         HeadTugasHariIni = new javax.swing.JLabel();
         PanelTgsHriIni = new java.awt.Panel();
@@ -54,12 +61,18 @@ public class Dashboards extends javax.swing.JFrame {
         PanelTugasRemind2 = new java.awt.Panel();
         JudulTugasRemind2 = new javax.swing.JLabel();
         TanggalWaktuDeadlineRemind2 = new javax.swing.JLabel();
-        PanelDetailReminder = new java.awt.Panel();
-        DetailReminder = new javax.swing.JLabel();
         HeadReminder = new javax.swing.JLabel();
         TanggalStart = new javax.swing.JLabel();
         TanggalEnd = new javax.swing.JLabel();
         PenghubungTanggal = new javax.swing.JLabel();
+        sVGIcon8 = new edu.SVGIcon();
+
+        sVGIcon5.setText("Beranda");
+        sVGIcon5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                sVGIcon5MouseClicked(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,31 +81,31 @@ public class Dashboards extends javax.swing.JFrame {
 
         Navbar.setBackground(new java.awt.Color(255, 174, 57));
 
-        Home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Beranda.png"))); // NOI18N
-        Home.addMouseListener(new java.awt.event.MouseAdapter() {
+        sVGIcon7.setText("St");
+        sVGIcon7.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                HomeMouseClicked(evt);
+                sVGIcon7MouseClicked(evt);
             }
         });
 
-        Tugas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Tugas.png"))); // NOI18N
-        Tugas.addMouseListener(new java.awt.event.MouseAdapter() {
+        sVGIcon4.setText("Be");
+        sVGIcon4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                TugasMouseClicked(evt);
+                sVGIcon4MouseClicked(evt);
             }
         });
 
-        Timer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Timmer.png"))); // NOI18N
-        Timer.addMouseListener(new java.awt.event.MouseAdapter() {
+        sVGIcon3.setText("Tu");
+        sVGIcon3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                TimerMouseClicked(evt);
+                sVGIcon3MouseClicked(evt);
             }
         });
 
-        Statistik.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Statistik.png"))); // NOI18N
-        Statistik.addMouseListener(new java.awt.event.MouseAdapter() {
+        sVGIcon6.setText("TI");
+        sVGIcon6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                StatistikMouseClicked(evt);
+                sVGIcon6MouseClicked(evt);
             }
         });
 
@@ -101,75 +114,59 @@ public class Dashboards extends javax.swing.JFrame {
         NavbarLayout.setHorizontalGroup(
             NavbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(NavbarLayout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(Home)
-                .addGap(40, 40, 40)
-                .addComponent(Tugas)
-                .addGap(40, 40, 40)
-                .addComponent(Timer)
-                .addGap(40, 40, 40)
-                .addComponent(Statistik)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(15, 15, 15)
+                .addComponent(sVGIcon4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(sVGIcon3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(48, 48, 48)
+                .addComponent(sVGIcon6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(48, 48, 48)
+                .addComponent(sVGIcon7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
         );
         NavbarLayout.setVerticalGroup(
             NavbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(NavbarLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(NavbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Tugas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Home, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Timer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Statistik))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addGroup(NavbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(sVGIcon4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sVGIcon3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sVGIcon7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sVGIcon6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         PanelAtas.setBackground(new java.awt.Color(255, 174, 57));
         PanelAtas.setForeground(new java.awt.Color(102, 0, 102));
 
-        HaloUser.setBackground(new java.awt.Color(0, 0, 153));
-        HaloUser.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        HaloUser.setForeground(new java.awt.Color(0, 0, 153));
-        HaloUser.setText("Halo, Username");
-
-        Logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/_(95 x 95 piksel).png"))); // NOI18N
-
-        Profil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Profil.png"))); // NOI18N
-        Profil.addMouseListener(new java.awt.event.MouseAdapter() {
+        sVGIcon1.setText("Profil");
+        sVGIcon1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ProfilMouseClicked(evt);
+                sVGIcon1MouseClicked(evt);
             }
         });
+
+        sVGIcon2.setText("LogoPomo");
 
         javax.swing.GroupLayout PanelAtasLayout = new javax.swing.GroupLayout(PanelAtas);
         PanelAtas.setLayout(PanelAtasLayout);
         PanelAtasLayout.setHorizontalGroup(
             PanelAtasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelAtasLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addGroup(PanelAtasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelAtasLayout.createSequentialGroup()
-                        .addComponent(HaloUser)
-                        .addContainerGap(173, Short.MAX_VALUE))
-                    .addGroup(PanelAtasLayout.createSequentialGroup()
-                        .addComponent(Logo)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(Profil)
-                        .addGap(27, 27, 27))))
+                .addGap(15, 15, 15)
+                .addComponent(sVGIcon2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(sVGIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
         );
         PanelAtasLayout.setVerticalGroup(
             PanelAtasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelAtasLayout.createSequentialGroup()
-                .addGroup(PanelAtasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(PanelAtasLayout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelAtasLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(Profil)
-                        .addGap(18, 18, 18)))
-                .addComponent(HaloUser)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addGap(22, 22, 22)
+                .addGroup(PanelAtasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(sVGIcon2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(sVGIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         TugasHariIni.setBackground(new java.awt.Color(250, 227, 143));
@@ -228,7 +225,7 @@ public class Dashboards extends javax.swing.JFrame {
                         .addContainerGap())))
         );
 
-        LihatSemuaTugas.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
+        LihatSemuaTugas.setFont(new java.awt.Font("Segoe UI", 1, 8)); // NOI18N
         LihatSemuaTugas.setForeground(new java.awt.Color(0, 0, 153));
         LihatSemuaTugas.setText("Lihat Semua Tugas Hari Ini");
         LihatSemuaTugas.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -296,7 +293,7 @@ public class Dashboards extends javax.swing.JFrame {
             .addGroup(StatistikPanelUtamaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(HeadJudulStatistik)
-                .addContainerGap(86, Short.MAX_VALUE))
+                .addContainerGap(98, Short.MAX_VALUE))
         );
 
         ReminderPanel.setBackground(new java.awt.Color(250, 227, 143));
@@ -329,7 +326,7 @@ public class Dashboards extends javax.swing.JFrame {
                 .addComponent(JudulTugasRemind1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(TanggalWaktuDeadlineTugasRemind1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(10, Short.MAX_VALUE))
         );
 
         PanelTugasRemind2.setBackground(new java.awt.Color(255, 252, 235));
@@ -363,30 +360,6 @@ public class Dashboards extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        DetailReminder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/Show More.png"))); // NOI18N
-        DetailReminder.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                DetailReminderMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout PanelDetailReminderLayout = new javax.swing.GroupLayout(PanelDetailReminder);
-        PanelDetailReminder.setLayout(PanelDetailReminderLayout);
-        PanelDetailReminderLayout.setHorizontalGroup(
-            PanelDetailReminderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelDetailReminderLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(DetailReminder)
-                .addContainerGap())
-        );
-        PanelDetailReminderLayout.setVerticalGroup(
-            PanelDetailReminderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(PanelDetailReminderLayout.createSequentialGroup()
-                .addGap(9, 9, 9)
-                .addComponent(DetailReminder)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
         HeadReminder.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         HeadReminder.setForeground(new java.awt.Color(0, 0, 153));
         HeadReminder.setText("Reminder Deadline");
@@ -403,6 +376,13 @@ public class Dashboards extends javax.swing.JFrame {
         PenghubungTanggal.setForeground(new java.awt.Color(0, 0, 153));
         PenghubungTanggal.setText("-");
 
+        sVGIcon8.setText("ShowAll");
+        sVGIcon8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                sVGIcon8MouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout ReminderPanelLayout = new javax.swing.GroupLayout(ReminderPanel);
         ReminderPanel.setLayout(ReminderPanelLayout);
         ReminderPanelLayout.setHorizontalGroup(
@@ -413,8 +393,8 @@ public class Dashboards extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PanelTugasRemind2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(PanelDetailReminder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(sVGIcon8, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ReminderPanelLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(ReminderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -439,9 +419,9 @@ public class Dashboards extends javax.swing.JFrame {
                     .addComponent(PenghubungTanggal))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(ReminderPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(sVGIcon8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(PanelTugasRemind2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(PanelTugas1Remind, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(PanelDetailReminder, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(PanelTugas1Remind, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -450,33 +430,28 @@ public class Dashboards extends javax.swing.JFrame {
         MainPanelLayout.setHorizontalGroup(
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MainPanelLayout.createSequentialGroup()
-                .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Navbar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(MainPanelLayout.createSequentialGroup()
-                        .addComponent(PanelAtas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(MainPanelLayout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addGroup(MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(TugasHariIni, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(ReminderPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(StatistikPanelUtama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(16, Short.MAX_VALUE))
+            .addComponent(PanelAtas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Navbar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         MainPanelLayout.setVerticalGroup(
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainPanelLayout.createSequentialGroup()
                 .addComponent(PanelAtas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(TugasHariIni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(ReminderPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(StatistikPanelUtama, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Navbar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44))
+                .addGap(66, 66, 66))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -493,41 +468,44 @@ public class Dashboards extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void HomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_HomeMouseClicked
-        new Dashboards().setVisible(true);
-        this.dispose();
-        // TODO add your handling code here:
-    }//GEN-LAST:event_HomeMouseClicked
-
-    private void TugasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TugasMouseClicked
-        new Tugas().setVisible(true);
-        this.dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_TugasMouseClicked
-
-    private void TimerMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TimerMouseClicked
-        new Timer().setVisible(true);
-        this.dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_TimerMouseClicked
-
-    private void StatistikMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_StatistikMouseClicked
-        new Statistik().setVisible(true);
-        this.dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_StatistikMouseClicked
-
-    private void DetailReminderMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DetailReminderMouseClicked
-        new Reminder().setVisible(true);
-        this.dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_DetailReminderMouseClicked
-
-    private void ProfilMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ProfilMouseClicked
-        new Profil().setVisible(true);
-        this.dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_ProfilMouseClicked
-
     private void LihatSemuaTugasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LihatSemuaTugasMouseClicked
         new TugasHariIni().setVisible(true);
         this.dispose();        // TODO add your handling code here:
     }//GEN-LAST:event_LihatSemuaTugasMouseClicked
+
+    private void sVGIcon1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sVGIcon1MouseClicked
+        new Profil().setVisible(true);
+        this.dispose(); 
+       // TODO add your handling code here:
+    }//GEN-LAST:event_sVGIcon1MouseClicked
+
+    private void sVGIcon3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sVGIcon3MouseClicked
+        new Tugas().setVisible(true);  
+        this.dispose(); // TODO add your handling code here:
+    }//GEN-LAST:event_sVGIcon3MouseClicked
+
+    private void sVGIcon4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sVGIcon4MouseClicked
+        new Dashboards().setVisible(true); 
+        this.dispose(); // TODO add your handling code here:
+    }//GEN-LAST:event_sVGIcon4MouseClicked
+
+    private void sVGIcon5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sVGIcon5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_sVGIcon5MouseClicked
+
+    private void sVGIcon6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sVGIcon6MouseClicked
+        new Timer().setVisible(true);     
+        this.dispose(); // TODO add your handling code here:
+    }//GEN-LAST:event_sVGIcon6MouseClicked
+
+    private void sVGIcon7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sVGIcon7MouseClicked
+        new Statistik().setVisible(true); 
+        this.dispose(); // TODO add your handling code here:
+    }//GEN-LAST:event_sVGIcon7MouseClicked
+
+    private void sVGIcon8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sVGIcon8MouseClicked
+        new Reminder().setVisible(true);         // TODO add your handling code here:
+    }//GEN-LAST:event_sVGIcon8MouseClicked
 
     /**
      * @param args the command line arguments
@@ -565,39 +543,38 @@ public class Dashboards extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel DetailReminder;
-    private javax.swing.JLabel HaloUser;
     private javax.swing.JLabel HeadJudulStatistik;
     private javax.swing.JLabel HeadReminder;
     private javax.swing.JLabel HeadTugasHariIni;
-    private javax.swing.JLabel Home;
     private javax.swing.JLabel JudulTugas;
     private javax.swing.JLabel JudulTugasRemind1;
     private javax.swing.JLabel JudulTugasRemind2;
     private javax.swing.JLabel LihatSemuaTugas;
-    private javax.swing.JLabel Logo;
     private javax.swing.JPanel MainPanel;
     private javax.swing.JPanel Navbar;
     private javax.swing.JPanel PanelAtas;
-    private java.awt.Panel PanelDetailReminder;
     private java.awt.Panel PanelTgsHriIni;
     private java.awt.Panel PanelTugas1Remind;
     private java.awt.Panel PanelTugasRemind2;
     private javax.swing.JLabel PenghubungTanggal;
     private javax.swing.JLabel PresentaseProgres;
-    private javax.swing.JLabel Profil;
     private javax.swing.JProgressBar ProgresTugas;
     private javax.swing.JPanel ReminderPanel;
-    private javax.swing.JLabel Statistik;
     private javax.swing.JPanel StatistikPanelUtama;
     private javax.swing.JLabel TanggalEnd;
     private javax.swing.JLabel TanggalHariIni;
     private javax.swing.JLabel TanggalStart;
     private javax.swing.JLabel TanggalWaktuDeadlineRemind2;
     private javax.swing.JLabel TanggalWaktuDeadlineTugasRemind1;
-    private javax.swing.JLabel Timer;
-    private javax.swing.JLabel Tugas;
     private javax.swing.JPanel TugasHariIni;
     private javax.swing.JLabel WaktuTanggalDeadline;
+    private edu.SVGIcon sVGIcon1;
+    private edu.SVGIcon sVGIcon2;
+    private edu.SVGIcon sVGIcon3;
+    private edu.SVGIcon sVGIcon4;
+    private edu.SVGIcon sVGIcon5;
+    private edu.SVGIcon sVGIcon6;
+    private edu.SVGIcon sVGIcon7;
+    private edu.SVGIcon sVGIcon8;
     // End of variables declaration//GEN-END:variables
 }
