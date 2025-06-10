@@ -34,6 +34,7 @@ public class Dashboards extends javax.swing.JFrame {
     private void initComponents() {
 
         sVGIcon5 = new edu.SVGIcon();
+        graph1 = new edu.Graph();
         MainPanel = new javax.swing.JPanel();
         Navbar = new javax.swing.JPanel();
         sVGIcon7 = new edu.SVGIcon();
@@ -43,7 +44,6 @@ public class Dashboards extends javax.swing.JFrame {
         PanelAtas = new javax.swing.JPanel();
         sVGIcon1 = new edu.SVGIcon();
         sVGIcon2 = new edu.SVGIcon();
-        jButton1 = new javax.swing.JButton();
         TugasHariIni = new javax.swing.JPanel();
         HeadTugasHariIni = new javax.swing.JLabel();
         PanelTgsHriIni = new java.awt.Panel();
@@ -149,8 +149,6 @@ public class Dashboards extends javax.swing.JFrame {
 
         sVGIcon2.setText("LogoPomo");
 
-        jButton1.setText("jButton1");
-
         javax.swing.GroupLayout PanelAtasLayout = new javax.swing.GroupLayout(PanelAtas);
         PanelAtas.setLayout(PanelAtasLayout);
         PanelAtasLayout.setHorizontalGroup(
@@ -158,8 +156,6 @@ public class Dashboards extends javax.swing.JFrame {
             .addGroup(PanelAtasLayout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(sVGIcon2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(sVGIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14))
@@ -170,8 +166,7 @@ public class Dashboards extends javax.swing.JFrame {
                 .addGap(22, 22, 22)
                 .addGroup(PanelAtasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(sVGIcon2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(sVGIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
+                    .addComponent(sVGIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -574,7 +569,7 @@ public class Dashboards extends javax.swing.JFrame {
     private javax.swing.JLabel TanggalWaktuDeadlineTugasRemind1;
     private javax.swing.JPanel TugasHariIni;
     private javax.swing.JLabel WaktuTanggalDeadline;
-    private javax.swing.JButton jButton1;
+    private edu.Graph graph1;
     private edu.SVGIcon sVGIcon1;
     private edu.SVGIcon sVGIcon2;
     private edu.SVGIcon sVGIcon3;
