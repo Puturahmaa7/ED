@@ -15,6 +15,7 @@ public class Tugas extends javax.swing.JFrame {
      */
     public Tugas() {
         initComponents();
+        sVGIcon1.setSVGIcon("SVGIcon/NewProfil.svg", 50, 50);
     }
 
     /**
@@ -59,6 +60,7 @@ public class Tugas extends javax.swing.JFrame {
         Statistik2 = new javax.swing.JLabel();
         Back = new javax.swing.JLabel();
         AddTugas = new javax.swing.JLabel();
+        sVGIcon1 = new edu.SVGIcon();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -377,6 +379,8 @@ public class Tugas extends javax.swing.JFrame {
             }
         });
 
+        sVGIcon1.setText("sVGIcon1");
+
         javax.swing.GroupLayout MainPanelLayout = new javax.swing.GroupLayout(MainPanel);
         MainPanel.setLayout(MainPanelLayout);
         MainPanelLayout.setHorizontalGroup(
@@ -396,6 +400,10 @@ public class Tugas extends javax.swing.JFrame {
                     .addComponent(PanelTgsHriIni2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(PanelTgsHriIni3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MainPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(sVGIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(97, 97, 97))
         );
         MainPanelLayout.setVerticalGroup(
             MainPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -405,7 +413,9 @@ public class Tugas extends javax.swing.JFrame {
                     .addComponent(JudulTugas1)
                     .addComponent(AddTugas)
                     .addComponent(Back))
-                .addGap(29, 29, 29)
+                .addGap(3, 3, 3)
+                .addComponent(sVGIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PanelTgsHriIni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(PanelTgsHriIni3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -501,8 +511,6 @@ public class Tugas extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AddTugas;
     private javax.swing.JLabel Back;
-    private javax.swing.JLabel Home;
-    private javax.swing.JLabel Home1;
     private javax.swing.JLabel Home2;
     private javax.swing.JLabel JudulTugas;
     private javax.swing.JLabel JudulTugas1;
@@ -510,8 +518,6 @@ public class Tugas extends javax.swing.JFrame {
     private javax.swing.JLabel JudulTugas3;
     private javax.swing.JLabel JudulTugas4;
     private javax.swing.JPanel MainPanel;
-    private javax.swing.JPanel Navbar;
-    private javax.swing.JPanel Navbar1;
     private javax.swing.JPanel Navbar2;
     private java.awt.Panel PanelTgsHriIni;
     private java.awt.Panel PanelTgsHriIni1;
@@ -525,14 +531,8 @@ public class Tugas extends javax.swing.JFrame {
     private javax.swing.JProgressBar ProgresTugas1;
     private javax.swing.JProgressBar ProgresTugas2;
     private javax.swing.JProgressBar ProgresTugas3;
-    private javax.swing.JLabel Statistik;
-    private javax.swing.JLabel Statistik1;
     private javax.swing.JLabel Statistik2;
-    private javax.swing.JLabel Timer;
-    private javax.swing.JLabel Timer1;
     private javax.swing.JLabel Timer2;
-    private javax.swing.JLabel Tugas;
-    private javax.swing.JLabel Tugas1;
     private javax.swing.JLabel Tugas2;
     private javax.swing.JLabel WaktuTanggalDeadline;
     private javax.swing.JLabel WaktuTanggalDeadline1;
@@ -542,5 +542,6 @@ public class Tugas extends javax.swing.JFrame {
     private javax.swing.JLabel WaktuTanggalDeadline5;
     private javax.swing.JLabel WaktuTanggalDeadline6;
     private javax.swing.JLabel WaktuTanggalDeadline7;
+    private edu.SVGIcon sVGIcon1;
     // End of variables declaration//GEN-END:variables
 }
